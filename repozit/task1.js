@@ -3,5 +3,6 @@ function Unique(a) {
     console.log(unarr);
 }
   
-let arr = [1, 2, 3, 1, 2]
-Unique(arr)
+let arr = [1, 2, 3, 1, 2];
+Unique(arr) 
+ 
