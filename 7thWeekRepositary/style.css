@@ -1,0 +1,10 @@
+strong{
+  color: #15f15f;
+  text-decoration: underline
+}
+section{
+  border: 3px solid rgb(255, 0, 0);
+}
+.task{
+  border: 3px solid rgb(200, 255, 0);
+}
