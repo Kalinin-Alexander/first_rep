@@ -9,3 +9,4 @@
   + [Решение](https://github.com/Kalinin-Alexander/first_rep/blob/main/7thWeekRepositary/task2.js)
 + #### Задание 3: Chunk. Напишите функцию, которая разделяет массив на части заданного размера.
   + [Решение](https://github.com/Kalinin-Alexander/first_rep/blob/main/7thWeekRepositary/task3.js)
+---
