@@ -1,11 +1,12 @@
+/*  Переделал
+теперь проверяет по кол-ву ключей, после по наличию одинаковых ключей и равных значениях в них  */
+
 function IsEqual(first, second) {
-    if (first.length !== second.length){
-        return false
-    }
+    if (Object.keys(first) == Object.keys(second))
     for (let key in first) {
-        if (first.hasOwnProperty(key) && (first[key] !== second[key])) {
+        if (second.hasOwnProperty(key) && (first[key] !=== second[key])) {
             return false;
-        }          
+        }   
     }
-    return true
-}    
+    return true; 
+}   
