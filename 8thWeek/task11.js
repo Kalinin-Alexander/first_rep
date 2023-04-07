@@ -1,7 +1,7 @@
-function multiplyNumeric(obj) {
+function multiplyNumeric(obj, n) {
     for (let key in obj) {
       if (typeof obj[key] == 'number') {
-        obj[key] *= 2;
+        return obj[key] *= n;
       }
     }
   }
