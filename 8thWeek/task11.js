@@ -11,5 +11,5 @@ function multiplyNumeric(a, b) {
             obj[key] *= b;
         }
     }
-    return obj
+    return obj;
 }
