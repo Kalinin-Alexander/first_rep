@@ -2,14 +2,15 @@
 теперь умножает на заданное число, возвращая новый массив  */
 
 function multiplyNumeric(a, b) {
-    obj = {};
+    let nevobj = {};
     for (let k in a) {
-        obj[k] = a[k];
+        nevobj[k] = a[k];
     }
-    for (let key in obj) {
-        if (typeof obj[key] == 'number') {
-            obj[key] *= b;
+    /* Досюда всё ок*/
+    for (let key in nevobj) {
+        if (typeof (nevobj[key]) == 'number') {
+            nevobj[key] *= +b;
         }
     }
-    return obj;
+    return nevobj;
 }
