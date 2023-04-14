@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание девятой недели</title>
+</head>
+<body>
+    <header> Практика </header>
+    <strong> Задание: </strong>
+    <section class = "task"> 
+        <p>Создаем простое подобие калькулятора. На странице делаем два инпута для двух чисел, кнопку Сложить, кнопку Умножить и поле с результатом.
+Функционал реализуем через объект calculator (калькулятор) с тремя методами:</p>
+        <li>read() (читать) запрашивает два значения из инпутов на странице и сохраняет их как свойства объекта.</li>
+        <li>sum() (суммировать) возвращает сумму сохранённых значений.</li>
+        <li>mul() (умножить) перемножает сохранённые значения и возвращает результат.</li> 
+    </section>
+    <section>
+        <input id="num1" />
+        <input id="num2" />
+        <p><button id="plus" onclick="op='+'">+</button>
+        <button id="mult" onclick="op='*'">x</button></p>
+        <button id="rez" onclick="schot()">resultat</button>
+        <div id="resultat">
+            <p>Пока пусто!</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="task1.js"></script>
+</body>
+</html>
