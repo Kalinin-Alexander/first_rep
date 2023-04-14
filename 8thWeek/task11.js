@@ -6,7 +6,6 @@ function multiplyNumeric(a, b) {
     for (let k in a) {
         nevobj[k] = a[k];
     }
-    /* Досюда всё ок*/
     for (let key in nevobj) {
         if (typeof (nevobj[key]) == 'number') {
             nevobj[key] *= +b;
