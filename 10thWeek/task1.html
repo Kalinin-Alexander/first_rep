@@ -9,32 +9,33 @@
         <div class="calc">
 
             <!-- Результат вычислений -->
-            <output class="calcResult" id="result">0</output>
+            <output class="calcResult" id="uravn"></output>
+            <output class="calcResult" id="result"></output>
           
             <!-- Клавиши калькулятора -->
-            <button class="calcBtnRbut">C</button>
+            <button class="calcBtnRbut" onclick="sbros()">C</button>
             <button class="calcBtnOperator" >()</button>
             <button class="calcBtnOperator" >%</button>
-            <button class="calcBtnOperator" onclick="op='/'">/</button>
+            <button class="calcBtnOperator" onclick="dobavlenie('/')">/</button>
 
-            <button class="calcBtn" >7</button>
-            <button class="calcBtn" >8</button>
-            <button class="calcBtn" >9</button>
-            <button class="calcBtnOperator" onclick="op='*'">х</button>
+            <button class="calcBtn" onclick="dobavlenie('7')">7</button>
+            <button class="calcBtn" onclick="dobavlenie('8')">8</button>
+            <button class="calcBtn" onclick="dobavlenie('9')">9</button>
+            <button class="calcBtnOperator" onclick="dobavlenie('*')">х</button>
           
-            <button class="calcBtn" >4</button>
-            <button class="calcBtn" >5</button>
-            <button class="calcBtn" >6</button>
-            <button class="calcBtnOperator" >-</button>
+            <button class="calcBtn" onclick="dobavlenie('4')">4</button>
+            <button class="calcBtn" onclick="dobavlenie('5')">5</button>
+            <button class="calcBtn" onclick="dobavlenie('6')">6</button>
+            <button class="calcBtnOperator" >-</button> 
           
-            <button class="calcBtn" >1</button>
-            <button class="calcBtn" >2</button>
-            <button class="calcBtn" >3</button>
-            <button class="calcBtnOperator" onclick="op='+'">+</button>  
+            <button class="calcBtn" onclick="dobavlenie('1')">1</button>
+            <button class="calcBtn" onclick="dobavlenie('2')">2</button>
+            <button class="calcBtn" onclick="dobavlenie('3')">3</button>
+            <button class="calcBtnOperator" onclick="dobavlenie('+')">+</button>  
           
             <button class="calcBtn" >+/-</button>
-            <button class="calcBtn" >0</button>   
-            <button class="calcBtn" >.</button>
+            <button class="calcBtn" onclick="dobavlenie('0')">0</button>   
+            <button class="calcBtn" onclick="dobavlenie('.')">.</button>
             <button class="calcRavno" onclick="schot()">=</button>
           
         </div>
