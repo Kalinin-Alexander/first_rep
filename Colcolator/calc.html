@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calc.css">
+    <title>Задание десятой недели</title>
+</head>
+<body>
+    <section>
+        <div class="calc">
+
+            <!-- Результат вычислений -->
+            <output class="calcResult" id="uravn"></output>
+            <output class="calcResult" id="result"></output>
+          
+            <!-- Клавиши калькулятора -->
+            <button class="calcBtnRbut" onclick="sbros()">C</button>
+            <button class="calcBtnOperator" >()</button>
+            <button class="calcBtnOperator" >%</button>
+            <button class="calcBtnOperator" onclick="operator('/')">/</button>
+
+            <button class="calcBtn" onclick="dobavlenie('7')">7</button>
+            <button class="calcBtn" onclick="dobavlenie('8')">8</button>
+            <button class="calcBtn" onclick="dobavlenie('9')">9</button>
+            <button class="calcBtnOperator" onclick="operator('*')">х</button>
+          
+            <button class="calcBtn" onclick="dobavlenie('4')">4</button>
+            <button class="calcBtn" onclick="dobavlenie('5')">5</button>
+            <button class="calcBtn" onclick="dobavlenie('6')">6</button>
+            <button class="calcBtnOperator" >-</button> 
+          
+            <button class="calcBtn" onclick="dobavlenie('1')">1</button>
+            <button class="calcBtn" onclick="dobavlenie('2')">2</button>
+            <button class="calcBtn" onclick="dobavlenie('3')">3</button>
+            <button class="calcBtnOperator" onclick="operator('+')">+</button>  
+          
+            <button class="calcBtn" >+/-</button>
+            <button class="calcBtn" onclick="dobavlenie('0')">0</button>   
+            <button class="calcBtn" onclick="dobavlenie('.')">.</button>
+            <button class="calcRavno" onclick="schot()">=</button>
+          
+        </div>
+    </section>
+    <script type="text/javascript" src="calc.js"></script>
+</body>
+</html>

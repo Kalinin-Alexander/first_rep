@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .calc {  
+    width: 500px;
+    border: solid 2px #000000;
+    border-radius: 20px;
+    background-color: #000000;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 80px;
+    gap: 15px;  
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .calcResult {
+    grid-column: 1 / -1;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 56px;
+    padding: 10px;
+    text-align:right;
+  }
+  .calcBtn {
+    border: none;
+    border-radius: 5px;
+    background-color: #585656;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 30px;  
+  }
+  .calcBtnOperator{
+    border: none;
+    border-radius: 5px;
+    background-color: #585656;
+    color: #4db464;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .calcRavno{
+    border: none;
+    border-radius: 5px;
+    background-color: #12a84b;
+    color: #000000;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .calcBtnRbut{
+    border: none;
+    border-radius: 5px;
+    background-color: #b11c1c;
+    color: #000000;
+    cursor: pointer;
+    font-size: 30px;
+  } 
+
+  @media (max-width: 1024px) {
+    .calc {
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .calc {
+        width: 90%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .calc {
+        width: 50%;
+    }
+  }
