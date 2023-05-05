@@ -1,5 +1,5 @@
 # **Задание 12 недели**
-+ ### Доработаный калькулятор: 
++ ### Доработать калькулятор: 
 + Проводить расчёт без eval()
 + Добавить @media  для разных типов экрана
 + [HTML страница](https://github.com/Kalinin-Alexander/first_rep/blob/main/Colcolator/calc.html)
