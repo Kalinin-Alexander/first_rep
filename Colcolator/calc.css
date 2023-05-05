@@ -66,18 +66,81 @@
 
   @media (max-width: 1024px) {
     .calc {
-        width: 100%;
+        width: 90%;
+        height: 90%;
+    }
+    .calcResult{
+        width: 90%;
+        height: 90%;
+    }
+    .calcBtnRbut{
+        width: 90%;
+        height: 90%;
+    }
+    .calcRavno{
+      width: 90%;
+      height: 90%;
+    }
+    .calcBtnOperator{
+      width: 90%;
+      height: 90%;
+    }
+    .calcBtn{
+      width: 90%;
+      height: 90%;
     }
   }
 
   @media (max-width: 768px) {
     .calc {
-        width: 90%;
-    }
+      width: 100%;
+      height: 100%;
+  }
+  .calcResult{
+      width: 100%;
+      height: 100%;
+  }
+  .calcBtnRbut{
+      width: 100%;
+      height: 100%;
+  }
+  .calcRavno{
+    width: 100%;
+    height: 100%;
+  }
+  .calcBtnOperator{
+    width: 100%;
+    height: 100%;
+  }
+  .calcBtn{
+    width: 100%;
+    height: 100%;
+  }
   }
 
   @media (max-width: 480px) {
     .calc {
-        width: 70%;
-    }
+      width: 70%;
+      height: 70%;
+  }
+  .calcResult{
+      width: 70%;
+      height: 70%;
+  }
+  .calcBtnRbut{
+      width: 70%;
+      height: 70%;
+  }
+  .calcRavno{
+    width: 70%;
+    height: 70%;
+  }
+  .calcBtnOperator{
+    width: 70%;
+    height: 70%;
+  }
+  .calcBtn{
+    width: 70%;
+    height: 70%;
+  }
   }
