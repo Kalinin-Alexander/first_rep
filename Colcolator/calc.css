@@ -66,7 +66,7 @@
 
   @media (max-width: 1024px) {
     .calc {
-        width: 500%;
+        width: 100%;
     }
   }
 
@@ -78,6 +78,6 @@
 
   @media (max-width: 480px) {
     .calc {
-        width: 100%;
+        width: 70%;
     }
   }
