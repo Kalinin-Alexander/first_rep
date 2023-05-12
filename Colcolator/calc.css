@@ -14,6 +14,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 80px;
     gap: 15px;  
+
   }
   body {
     margin: 0;
@@ -66,81 +67,81 @@
 
   @media (max-width: 1024px) {
     .calc {
-        width: 90%;
-        height: 90%;
+        width: 50%;
+        height: 50%;
     }
     .calcResult{
-        width: 90%;
-        height: 90%;
+        width: 50%;
+        height: 50%;
     }
     .calcBtnRbut{
-        width: 90%;
-        height: 90%;
+        width: 50%;
+        height: 50%;
     }
     .calcRavno{
-      width: 90%;
-      height: 90%;
+      width: 50%;
+      height: 50%;
     }
     .calcBtnOperator{
-      width: 90%;
-      height: 90%;
+      width: 50%;
+      height: 50%;
     }
     .calcBtn{
-      width: 90%;
-      height: 90%;
+      width: 50%;
+      height: 50%;
     }
   }
 
   @media (max-width: 768px) {
     .calc {
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 90%;
   }
   .calcResult{
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 90%;
   }
   .calcBtnRbut{
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 90%;
   }
   .calcRavno{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
   .calcBtnOperator{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
   .calcBtn{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
   }
 
   @media (max-width: 480px) {
     .calc {
-      width: 70%;
-      height: 70%;
+      width: 100%;
+      height: 80%;
   }
   .calcResult{
-      width: 70%;
-      height: 70%;
+      width: 100%;
+      height: 80%;
   }
   .calcBtnRbut{
-      width: 70%;
-      height: 70%;
+      width: 100%;
+      height: 80%;
   }
   .calcRavno{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 80%;
   }
   .calcBtnOperator{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 80%;
   }
   .calcBtn{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 80%;
   }
   }
