@@ -1,48 +1,55 @@
-let znak = {
-    firstChisl: '' ,
-    secondChisl: '',
-    oper: '',
-}
+let nums = [];
+let operators = [];
+let kolBo = 0;
 
-function schot() {
-    let urevnenie;
-    switch(znak.oper) {
-        case '+': 
-            urevnenie = +znak.firstChisl + +znak.secondChisl;
-            break;
-        case '*': 
-            urevnenie = +znak.firstChisl * +znak.secondChisl;
-            break;
-        case '/': 
-          urevnenie = +znak.firstChisl / +znak.secondChisl;
-          break;
-        default:
-            urevnenie = znak.firstChisl;
-      }
-    document.querySelector('#result').innerText ='';
-    document.querySelector('#result').innerText += urevnenie;
-}
-  
-function sbros() {
-    document.querySelector('#uravn').innerText ='';
-    document.querySelector('#result').innerText ='';
-    znak = {
-        firstChisl: '' ,
-        secondChisl: '',
-        oper: '',
-    }
-}
-  
 function dobavlenie(a) {
     document.querySelector('#uravn').innerText += a ;
-    if (znak.oper != ''){
-        znak.secondChisl = znak.secondChisl + a;
+    if (length.operators != kolBo){
+        nums.push(+a);
+        kolBo += 1;
     } else{
-       znak.firstChisl = znak.firstChisl + a; 
+        nums[kolBo].push(+a);
     }
 }
 
 function operator(op) {
-    znak.oper = op;
+    operators.push(op);
     document.querySelector('#uravn').innerText += op ;
+}
+
+function sbros() {
+    document.querySelector('#uravn').innerText ='';
+    document.querySelector('#result').innerText ='';
+    nums = [];
+    operators = [];
+    kolBo = 0;
+}
+
+function schot() {
+    let otvet;
+    operators.forEach (element => {
+        switch(element) {
+            case '+': 
+                otvet = nums.shift() + nums.shift();
+                nums[0] = otvet;
+                break;
+            case '-': 
+                otvet = nums.shift() - nums.shift();
+                nums[0] = otvet;
+                break;
+            case '*': 
+                otvet = nums.shift() * nums.shift();
+                nums[0] = otvet;
+                break;
+            case '/': 
+                otvet = nums.shift() / nums.shift();
+                nums[0] = otvet;
+                break;
+            default:
+                otvet = nums.shift();
+        }
+    })
+        
+    document.querySelector('#result').innerText ='';
+    document.querySelector('#result').innerText += otvet;
 }
