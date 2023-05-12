@@ -17,26 +17,26 @@
             <button class="calcBtnRbut" onclick="sbros()">C</button>
             <button class="calcBtnOperator" >()</button>
             <button class="calcBtnOperator" >%</button>
-            <button class="calcBtnOperator" onclick="operator('/')">/</button>
+            <button class="calcBtnOperator" value="/" onclick="operator(this.value)">/</button>
 
-            <button class="calcBtn" onclick="dobavlenie('7')">7</button>
-            <button class="calcBtn" onclick="dobavlenie('8')">8</button>
-            <button class="calcBtn" onclick="dobavlenie('9')">9</button>
-            <button class="calcBtnOperator" onclick="operator('*')">х</button>
+            <button class="calcBtn" value="7" onclick="dobavlenie(this.value)">7</button>
+            <button class="calcBtn" value="8" onclick="dobavlenie(this.value)">8</button>
+            <button class="calcBtn" value="9" onclick="dobavlenie(this.value)">9</button>
+            <button class="calcBtnOperator" value="*" onclick="operator(this.value)">х</button>
           
-            <button class="calcBtn" onclick="dobavlenie('4')">4</button>
-            <button class="calcBtn" onclick="dobavlenie('5')">5</button>
-            <button class="calcBtn" onclick="dobavlenie('6')">6</button>
-            <button class="calcBtnOperator" >-</button> 
+            <button class="calcBtn" value="4" onclick="dobavlenie(this.value)">4</button>
+            <button class="calcBtn" value="5" onclick="dobavlenie(this.value)">5</button>
+            <button class="calcBtn" value="6" onclick="dobavlenie(this.value)">6</button>
+            <button class="calcBtnOperator" value="-" onclick="operator(this.value)">-</button> 
           
-            <button class="calcBtn" onclick="dobavlenie('1')">1</button>
-            <button class="calcBtn" onclick="dobavlenie('2')">2</button>
-            <button class="calcBtn" onclick="dobavlenie('3')">3</button>
-            <button class="calcBtnOperator" onclick="operator('+')">+</button>  
+            <button class="calcBtn" value="1" onclick="dobavlenie(this.value)">1</button>
+            <button class="calcBtn" value="2" onclick="dobavlenie(this.value)">2</button>
+            <button class="calcBtn" value="3" onclick="dobavlenie(this.value)">3</button>
+            <button class="calcBtnOperator" value="+" onclick="operator(this.value)">+</button>  
           
             <button class="calcBtn" >+/-</button>
-            <button class="calcBtn" onclick="dobavlenie('0')">0</button>   
-            <button class="calcBtn" onclick="dobavlenie('.')">.</button>
+            <button class="calcBtn" value="0" onclick="dobavlenie(this.value)">0</button>   
+            <button class="calcBtn" value="," onclick="dobavlenie(this.value)">.</button>
             <button class="calcRavno" onclick="schot()">=</button>
           
         </div>
