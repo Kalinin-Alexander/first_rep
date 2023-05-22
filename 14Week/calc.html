@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calc.css">
+    <title>Задание десятой недели</title>
+</head>
+<body>
+    <section>
+        <div class="calc">
+
+            <!-- Результат вычислений -->
+            <output class="calcResult" id="uravn"></output>
+            <output class="calcResult" id="result"></output>
+          
+            <!-- Клавиши калькулятора -->
+            <button class="calcBtnRbut" onclick="emptyResult()">C</button>
+            <button class="calcBtnOperator" >()</button>
+            <button class="calcBtnOperator" >%</button>
+            <button class="calcBtnOperator" value="/" onclick="addOperator(this.value)">/</button>
+
+            <button class="calcBtn" value="7" onclick="addNumber(this.value)">7</button>
+            <button class="calcBtn" value="8" onclick="addNumber(this.value)">8</button>
+            <button class="calcBtn" value="9" onclick="addNumber(this.value)">9</button>
+            <button class="calcBtnOperator" value="*" onclick="addOperator(this.value)">х</button>
+          
+            <button class="calcBtn" value="4" onclick="addNumber(this.value)">4</button>
+            <button class="calcBtn" value="5" onclick="addNumber(this.value)">5</button>
+            <button class="calcBtn" value="6" onclick="addNumber(this.value)">6</button>
+            <button class="calcBtnOperator" value="-" onclick="addOperator(this.value)">-</button> 
+          
+            <button class="calcBtn" value="1" onclick="addNumber(this.value)">1</button>
+            <button class="calcBtn" value="2" onclick="addNumber(this.value)">2</button>
+            <button class="calcBtn" value="3" onclick="addNumber(this.value)">3</button>
+            <button class="calcBtnOperator" value="+" onclick="addOperator(this.value)">+</button>  
+          
+            <button class="calcBtn" >+/-</button>
+            <button class="calcBtn" value="0" onclick="addNumber(this.value)">0</button>   
+            <button class="calcBtn" value="," onclick="addNumber(this.value)">.</button>
+            <button class="calcRavno" onclick="getResult()">=</button>
+          
+        </div>
+    </section>
+    <script type="text/javascript" src="calc.js"></script>
+</body>
+</html>
