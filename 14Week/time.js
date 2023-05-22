@@ -11,7 +11,7 @@ function getTimeRemaining(endtime) {
 
 
 function initializeClock(endtime) {
-    let clock = document.getElementById('countdown');
+    let clock = document.getElementById('timer');
     let minutesSpan = clock.querySelector('.minutes');
     let secondsSpan = clock.querySelector('.seconds');
     document.getElementById('restart').disabled = true;
