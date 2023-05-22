@@ -34,10 +34,10 @@ function initializeClock(endtime) {
 
 }
 
-let deadline = new Date(Date.parse(new Date()) + 0.1 * 60 * 1000);
+let deadline = new Date(Date.parse(new Date()) + 10 * 60 * 1000);
 initializeClock(deadline);
 
 function restart(){
-    deadline = new Date(Date.parse(new Date()) + 0.1 * 60 * 1000);
+    deadline = new Date(Date.parse(new Date()) + 10 * 60 * 1000);
     initializeClock(deadline);
 }
