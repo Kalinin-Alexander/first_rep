@@ -3,3 +3,8 @@
   + [HTML](https://github.com/Kalinin-Alexander/first_rep/blob/main/14Week/Time.html)
   + [CSS](https://github.com/Kalinin-Alexander/first_rep/blob/main/14Week/time.css)
   + [JS](https://github.com/Kalinin-Alexander/first_rep/blob/main/14Week/time.js)
+
++ #### Доработка калькулятора
++ [HTML](https://github.com/Kalinin-Alexander/first_rep/blob/main/14Week/calc.html)
++ [CSS ещё не обновлён](https://github.com/Kalinin-Alexander/first_rep/blob/main/14Week/calc.css)
++ [JS](https://github.com/Kalinin-Alexander/first_rep/blob/main/14Week/calc.js)
