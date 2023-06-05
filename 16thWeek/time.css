@@ -1,0 +1,19 @@
+.timer{
+    height: 50px;
+    width: fit-content;
+    margin: auto;
+    text-align:center;
+    background-color: #d6c185;
+}
+.bigTime{
+    color: rgb(130, 130, 130);
+    margin: auto;
+    text-align:center;
+}
+
+.seconds timer-time{
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transform: translateY(-100%);
+}
