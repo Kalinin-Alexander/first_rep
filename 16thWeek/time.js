@@ -1,3 +1,5 @@
+let setDuration = 10 * 60 * 1000;
+
 function getTimeRemaining(endtime) {
     let t = Date.parse(endtime) - Date.parse(new Date());
     let seconds = Math.floor((t / 1000) % 60);
@@ -34,10 +36,10 @@ function initializeClock(endtime) {
 
 }
 
-let deadline = new Date(Date.parse(new Date()) + 10 * 60 * 1000);
+let deadline = new Date(Date.parse(new Date()) + setDuration);
 initializeClock(deadline);
 
 function restart(){
-    deadline = new Date(Date.parse(new Date()) + 10 * 60 * 1000);
+    deadline = new Date(Date.parse(new Date()) + setDuration);
     initializeClock(deadline);
 }
