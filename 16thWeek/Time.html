@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="time.css">
-    <title>Задание 14 недели</title>
+    <title>Задание 17 недели</title>
 </head>
 <body>
     <div id="timer" class="timer">
       <p class="bigTime">TIMER</p>
-        <div >
-          <span class="minutes timer-time"></span>
-          <b>Минут</b>
-        </div>
-        <div >
-          <span class="seconds timer-time"></span>
-          <b>Секунд</b>
+      <div class="d1">
+        <div class="dial">
+          <span class="minutes">00</span>
+          <b>:</b>
+          <span class="seconds">00</span>
         </div>
       </div>
-    <button id="restart" disabled onclick="restart()"> Запустить заново </button>
+    </div>
+    <button id="restart" onclick="restart()"> &#8634 </button>
+    <button id="starts" onclick="starts()"> Start </button>
     <script type="text/javascript" src="time.js"></script>
 </body>
 </html>
