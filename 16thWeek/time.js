@@ -1,5 +1,5 @@
 //задание времени таймера
-let setDuration = 0.5 * 60 * 1000;
+let timeInMinutes = 0.5 ;
 
 //разделение на: оставшееся время, секунды минуты
 function getTimeRemaining(endtime) {
@@ -24,6 +24,7 @@ function initializeClock(endtime) {
         let t = getTimeRemaining(endtime);
         minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
         secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
         
         if (t.total <= 0) {
             clearInterval(timeinterval);
@@ -35,46 +36,32 @@ function initializeClock(endtime) {
     let timeinterval = setInterval(updateClock, 1000);
 
 }
-
 //задание конечного времени таймера
-let deadline = new Date(Date.parse(new Date()) + setDuration);
+let deadline = new Date(Date.parse(new Date()) + (timeInMinutes * 60 * 1000));
 
 //кнопка рестарта
 function restart(){
-    deadline = new Date(Date.parse(new Date()) + setDuration);
-    initializeClock(deadline);
+   // deadline = new Date(Date.parse(new Date()) + (timeInMinutes * 60 * 1000));
+   // initializeClock(deadline);
 }
 
-//остаток времени на таймере при нажатии кнопки стоп
-let remains;
-
-// блок с кнопкой старт/стоп ещё не готов
-
-//счётчик для нажатий кнопки старт/стоп
-let a = 0;
-
 //кнопка старт/стоп
+let started = false;
 function starts(){
-    switch(a) {
+    switch(started) {
         //первое нажатие должно запустить таймер
-        case 0: 
-            a = 1;
+        case false: 
             document.getElementById('starts').innerText = 'Stop';
+            deadline = new Date(Date.parse(new Date()) + (timeInMinutes * 60 * 1000));
+            initializeClock(deadline);
+            started = true;
             break;
         //следующее нажатие после первого запоминает остаток времени и останавливает таймер
-        case 1: 
-            a = 2;
-            //запоминание остатка времени
-            remains = getTimeRemaining(endtime).total;
+        case true: 
             document.getElementById('starts').innerText = 'Start';
-            //остановка времени на таймере (пока нет)
-            break;
-        //следущее(каждое чётное) запускает таймер с оставшимся временем
-        case 2: 
-            a = 1;
-            document.getElementById('starts').innerText = 'Stop';
-            //запуск по оставшемуся времени
-            initializeClock(remains);
+            deadline = new Date(Date.parse(new Date()) + (0 * 60 * 1000));
+            initializeClock(deadline);
+            started = false;
             break;
     }
 }
