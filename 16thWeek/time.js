@@ -1,5 +1,7 @@
 //задание времени таймера
-let timeInMinutes = 0.5 ;
+let timeInMinutes = 1;
+let timeinterval;
+let diff = timeInMinutes * 60 * 1000;
 
 //разделение на: оставшееся время, секунды минуты
 function getTimeRemaining(endtime) {
@@ -22,45 +24,42 @@ function initializeClock(endtime) {
     //обновление значения на табло
     function updateClock() {
         let t = getTimeRemaining(endtime);
+        diff = diff - 1000;
         minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
         secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-        
         if (t.total <= 0) {
             clearInterval(timeinterval);
         }
     }
-
     updateClock();
-
-    let timeinterval = setInterval(updateClock, 1000);
-
+    timeinterval = setInterval(updateClock, 1000);
 }
-//задание конечного времени таймера
-let deadline = new Date(Date.parse(new Date()) + (timeInMinutes * 60 * 1000));
 
 //кнопка рестарта
-function restart(){
-   // deadline = new Date(Date.parse(new Date()) + (timeInMinutes * 60 * 1000));
-   // initializeClock(deadline);
+function restart() {
+    clearInterval(timeinterval);
+    diff = timeInMinutes * 60 * 1000;
+    deadline = new Date(Date.parse(new Date()) + diff);
+    initializeClock(deadline);
+    started = true;
+    document.getElementById('starts').innerText = 'Stop';
+    
 }
 
 //кнопка старт/стоп
 let started = false;
-function starts(){
+function starts() {
     switch(started) {
         //первое нажатие должно запустить таймер
         case false: 
             document.getElementById('starts').innerText = 'Stop';
-            deadline = new Date(Date.parse(new Date()) + (timeInMinutes * 60 * 1000));
-            initializeClock(deadline);
+            initializeClock(new Date(Date.parse(new Date()) + diff));
             started = true;
             break;
         //следующее нажатие после первого запоминает остаток времени и останавливает таймер
         case true: 
+            clearInterval(timeinterval);
             document.getElementById('starts').innerText = 'Start';
-            deadline = new Date(Date.parse(new Date()) + (0 * 60 * 1000));
-            initializeClock(deadline);
             started = false;
             break;
     }
