@@ -7,4 +7,4 @@
 + [Неделя 11](https://github.com/Kalinin-Alexander/first_rep/blob/main/11thWeek/ReadMe.md)
 + [Неделя 12-13](https://github.com/Kalinin-Alexander/first_rep/blob/main/Colcolator/calculator.md)
 + [Неделя 14](https://github.com/Kalinin-Alexander/first_rep/blob/main/14Week/ReadMe14.md)
-+ [Неделя 16-18](https://github.com/Kalinin-Alexander/first_rep/blob/main/16thWeek/ReadMe16.md)
++ [Неделя 16-19](https://github.com/Kalinin-Alexander/first_rep/blob/main/16thWeek/ReadMe16.md)
