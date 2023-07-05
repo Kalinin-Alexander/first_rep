@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="time.css">
-    <title>Задание 17 недели</title>
+    <title>Таймер</title>
 </head>
 <body>
   <div class="timer">
     <p class="timer_title">TIMER</p>
-    <div class="timer_cnt">
-      <div class="timer_cnt_time">
+    <div class="timer-cnt">
+      <div class="timer-cnt_time">
         <span class="minutes">00</span>
         <b>:</b>
         <span class="seconds">00</span>
       </div>
-      <button class="timer_cnt_restart" onclick="restart()"> &#8634 </button>
+      <button class="timer-cnt_restart" onclick="restart()"> &#8634 </button>
     </div>
   </div>
-  <button class="timer_btn" onclick="starts()"> Start </button>
-  <script type="text/javascript" src="time.js"></script>
+  <button class="timer_btn" onclick="starts()"> <span id="btn_txt">Start</span> </button>
+  <script type="text/javascript" src="time2.js"></script>
 </body>
 </html>
